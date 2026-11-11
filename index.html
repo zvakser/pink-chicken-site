@@ -1,127 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Pink Chicken develops software, games, and internal tools." />
-  <title>Pink Chicken</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pink Chicken is an independent development studio creating applications, games, and software tools.">
+  <meta name="theme-color" content="#fff8ef">
+  <title>Pink Chicken — Independent Development Studio</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Pink Chicken home">
-      <span class="brand-mark" aria-hidden="true">PC</span>
-      <span>Pink Chicken</span>
-    </a>
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
+    <a class="brand" href="index.html" aria-label="Pink Chicken home"><span class="brand-icon" aria-hidden="true"></span><span class="brand-lettering"><span class="brand-name">PINK <span>CHICKEN</span></span><span class="brand-subtitle">PRODUCTIONS</span></span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">Our work</a>
+      <a href="#studio">Studio</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Independent software studio</p>
-        <h1>Pink Chicken</h1>
-        <p class="hero-text">
-          Pink Chicken develops consumer applications, games, and internal software tools.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Projects</a>
-          <a class="button secondary" href="mailto:hermanphrend@outlook.com">Contact</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shell">
+        <div class="hero-content">
+          <p class="overline"><span class="line"></span> Independent development studio</p>
+          <h1 id="hero-title">PINK<br><em>CHICKEN.</em></h1>
+          <p class="hero-description">We make video games, board games, mobile apps, and software tools.</p>
+          <a class="text-link" href="#work">Explore our work <span aria-hidden="true">↗</span></a>
         </div>
-      </div>
-
-      <div class="hero-card" aria-label="Pink Chicken">
-        <div class="chicken-orbit orbit-one"></div>
-        <div class="chicken-orbit orbit-two"></div>
-        <div class="chicken-badge">
-          <span class="chicken-eye eye-left"></span>
-          <span class="chicken-eye eye-right"></span>
-          <span class="chicken-beak"></span>
-        </div>
-        <p>Pink Chicken</p>
+        <div class="hero-art"><div class="art-circle" aria-hidden="true"></div><img src="assets/hermanphrend.png" alt="Hermanphrend, the Pink Chicken mascot, a fuzzy pink chicken with a yellow beak and gold bell" width="1090" height="1443" fetchpriority="high"></div>
+        <span class="hero-caption" aria-hidden="true">MEET HERMANPHREND / THE STUDIO MASCOT</span>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Current project</p>
-        <h2>Perfect Chicken Player</h2>
-      </div>
+    <section class="work section-wrap" id="work" aria-labelledby="work-title">
+      <div class="section-intro"><div><p class="overline">01 / Selected work</p><h2 id="work-title">What we're<br>working on<span class="period">.</span></h2></div></div>
 
-      <article class="featured-project">
-        <div>
-          <p class="project-type">Android music player</p>
-          <h3>Local music playback with advanced library and metadata tools.</h3>
-          <p>
-            Perfect Chicken Player is an Android music player designed for users who maintain
-            local music libraries and want greater control over playback, metadata, organization,
-            and appearance.
-          </p>
-          <ul class="feature-list">
-            <li>Local music library playback</li>
-            <li>Metadata editing and lookup tools</li>
-            <li>Library organization and customization</li>
-            <li>Configurable player appearance and behavior</li>
-          </ul>
+      <article class="featured-project" aria-labelledby="pcp-title">
+        <div class="featured-copy">
+          <p class="overline">Android application</p>
+          <h3 id="pcp-title">Perfect<br>Chicken<br>Player<span class="period">.</span></h3>
+          <p>An Android Music Player built from the ground up for metadata obsessives. Enjoy your local media library with help from Hermanphrend, your dedicated metadata assistant.</p>
+          <p class="coming-soon">Coming Soon</p>
         </div>
-        <div class="project-status">
-          <span class="status-dot"></span>
-          <span>In development</span>
+        <div class="player-visual" aria-label="Graphic representing local music playback">
+          <img class="player-app-art" src="assets/perfect-chicken-player.png" width="1254" height="1254" alt="Perfect Chicken Player app logo with a bright pink vinyl record and chicken emblem" loading="lazy">
+          <div class="player-ticker"><span>PERFECT CHICKEN PLAYER</span><span>ANDROID / COMING SOON</span></div>
         </div>
       </article>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-type">Game</p>
-          <h3>Project Nightjar</h3>
-          <p>
-            A first-person social deduction game centered on hidden teams, player-created paintings,
-            proximity communication, and survival.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <p class="project-type">Internal software</p>
-          <h3>Pink Chicken Tools</h3>
-          <p>
-            Internal development and documentation tools created to support Pink Chicken projects and workflows.
-          </p>
-        </article>
-      </div>
+      <article class="nightjar-project" aria-labelledby="nightjar-title">
+        <div class="nightjar-number">02 / GAME IN DEVELOPMENT</div>
+        <div><h3 id="nightjar-title">Project Nightjar<span class="period">.</span></h3><p>An online multiplayer Unreal Engine project where the lines are blurred between friend and foe. Targeting a 2027 release on Steam.</p><p class="coming-soon nightjar-soon">Coming Soon</p></div>
+      </article>
+      <p class="future-projects">We have more unannounced projects in development that we look forward to sharing. Stay tuned for more information.</p>
     </section>
 
-    <section class="section about" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Independent software and game development.</h2>
-      </div>
-      <p>
-        Pink Chicken develops applications, games, and supporting software projects independently.
-        Current work includes Perfect Chicken Player and Project Nightjar.
-      </p>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Contact Pink Chicken</h2>
-        <p>For support, business inquiries, or general questions, contact us by email.</p>
-      </div>
-      <a class="button primary" href="mailto:hermanphrend@outlook.com">hermanphrend@outlook.com</a>
-    </section>
+    <section class="studio" id="studio" aria-labelledby="studio-title"><div class="section-wrap studio-inner"><p class="overline">02 / The studio</p><h2 id="studio-title">We are Pink Chicken.</h2><p>Pink Chicken is an independent development studio founded by Zane Vakser in 2026. We work on mobile phone apps, software tools, and board games, with a particular passion for video games and an emphasis on unique, outside-the-egg ideas.</p></div></section>
+    <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title"><div><p class="overline">03 / Get in touch</p><h2 id="contact-title">Contact<br>Pink Chicken<span class="period">.</span></h2></div><div class="contact-info"><p>For project information, support, or business inquiries:</p><a href="mailto:hermanphrend@outlook.com">hermanphrend@outlook.com <span aria-hidden="true">↗</span></a><p class="contact-small">Looking for help with an app? Visit our <a href="support.html">support page</a>.</p></div></section>
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Pink Chicken. All rights reserved.</p>
-    <div>
-      <a href="privacy.html">Privacy</a>
-      <a href="support.html">Support</a>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="footer-inner"><span class="footer-logo">PINK CHICKEN <small>PRODUCTIONS</small></span><div class="footer-links"><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="mailto:hermanphrend@outlook.com">Email</a></div><small>© 2026 Pink Chicken. All rights reserved.</small></div></footer>
 </body>
 </html>
